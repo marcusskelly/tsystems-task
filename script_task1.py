@@ -25,7 +25,7 @@ class FilterSitesScript(Script):
             results.append({
                 "id": site.id,
                 "name": site.name,
-                "status": site.status.slug
+                "status": site.status
             })
 
         return yaml.dump(results, sort_keys=False)
